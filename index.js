@@ -13,6 +13,9 @@ app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) => {
+  res.send("Running");
+});
 
 io.on("connection", (socket) => {
   socket.emit("me", socket.id);
@@ -49,10 +52,5 @@ io.on("connection", (socket) => {
     io.to(id).emit("endCall");
   });
 });
-
-if ( process.env.NODE_ENV == "production"){
-
-  app.use(express.static("client/build"));
-}
 
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
