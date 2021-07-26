@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
-    "dev": "concurrently \"node index.js\" \"npm run client\""
+    "dev": "concurrently \"node index.js\" \"npm run client\"",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
