@@ -12,7 +12,6 @@ import {
   InfoCircleOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
-import { socket } from "../../context/VideoState";
 
 const Options = () => {
   const [idToCall, setIdToCall] = useState("");
@@ -22,9 +21,6 @@ const Options = () => {
   const {
     call,
     callAccepted,
-    myVideo,
-    userVideo,
-    stream,
     name,
     setName,
     callEnded,
