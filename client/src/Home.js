@@ -4,7 +4,6 @@ import Video from "./components/Video/Video";
 import VideoState from "./context/VideoState";
 
 import Options from "./components/options/Options";
-import Footer from "./components/Footer/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -15,7 +14,6 @@ const Home = () => {
       <div className="App" style={{ height: "100%", width: "100%" }}>
         <Video />
         <Options />
-        {/* <Footer /> */}
       </div>
     </VideoState>
   );

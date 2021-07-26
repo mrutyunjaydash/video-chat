@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
 import VideoContext from "../../context/VideoContext";
 import "./Video.css";
-import { Card, Modal, Button, Input, notification, Avatar } from "antd";
-import Man from "../../assests/man.svg";
+import { Modal, Input, notification, Avatar } from "antd";
 import VideoIcon from "../../assests/video.svg";
-import { io } from "socket.io-client";
 import VideoOff from "../../assests/video-off.svg";
 // import Profile from "../../assests/profile.svg";
 import Msg_Illus from "../../assests/msg_illus.svg";
@@ -23,12 +21,7 @@ const Video = () => {
     userVideo,
     stream,
     name,
-    setName,
     callEnded,
-    me,
-    callUser,
-    leaveCall,
-    answerCall,
     sendMsg: sendMsgFunc,
     msgRcv,
     chat,
