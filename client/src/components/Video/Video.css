@@ -8,8 +8,6 @@
 }
 
 .input_msg {
-  font-family: Gilroy-light;
-  font-weight: bold;
   margin-top: 1rem;
 }
 .card {
@@ -19,7 +17,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border: 2px solid rgb(5, 117, 230, 1);
+  border: 2px solid #22c1c3;
   border-image-slice: 1;
   padding: 10px 0;
 }
@@ -29,7 +27,7 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  border: 2px solid rgb(5, 117, 230, 1);
+  border: 2px solid #22c1c3;
   padding: 10px 0 0 0;
   border-radius: 5px;
 }
